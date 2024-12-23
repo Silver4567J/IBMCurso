@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Luxury Brand Feedback</title>
+</head>
+<body>
+  <h1>Bienvenido a la mejora de servicio para la tienda de pepos</h1>
+  <h2>Porfavor provvea sus datos en informacion</h2>
+  <label for="name">Nombre:</label><br>
+  <input type="text" id="name" placeholder="Your Name" required><br>
+  <label for="age">Edad:</label><br>
+  <input type="number" id="age" placeholder="Your Age" required><br>
+  <label for="email">Correo:</label><br>
+  <input type="email" id="email" placeholder="Your Email" required><br>
+  <label for="job">Trabajo:</label><br>
+  <input type="text" id="job" placeholder="Your Job" required><br>
+  <label for="designation">Designacion:</label><br>
+  <input type="text" id="designation" placeholder="Your Designation" required><br>
+  <label for="productType">Tipo de producto:</label><br>
+  <select id="productType" required>
+    <option value="perfume">Perfume</option>
+    <option value="cream">Crema para piel</option>
+    <option value="oils">Aceites corporales</option>
+  </select><br>
+  <label for="feedbackText">Comentarios:</label><br>
+  <textarea id="feedbackText" rows="5" cols="30" placeholder="Enter your feedback here" required></textarea><br>
+  <label for="userExperince">Experiencia de usuario:</label><br>
+  <textarea id="userExperince" rows="5" cols="30" placeholder="Escriba su Experiencia" required></textarea><br>
+<button id="submitBtn">Enviar comentarios</button>
+<hr>
+<div id="userInfo" style="display: none;">
+  <h2>Informacion del usuario:</h2>
+  <p>Nombre: <span id="userName"></span></p>
+  <p>Edad: <span id="userAge"></span></p>
+  <p>Correo: <span id="userEmail"></span></p>
+  <p>Trabajo: <span id="userJob"></span></p>
+  <p>Departamento: <span id="userDesignation"></span></p>
+  <p>Comentarios  <span id="userProductChoice"></span>: <span id="userFeedback"></span></p>
+  <p>Experiencia de usuario: <span id="userExperinceDes"></span></p>
+</div>
+<script src="./product_survey.js"></script>
+</body>
+</html>
