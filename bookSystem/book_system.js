@@ -37,3 +37,29 @@ function clearInputs() {
     document.getElementById('pagesNumber').value = '';
 }
 
+/*
+Explicación detallada acerca del ejercicio para resolver:
+1.- Agregar un botón dinámico:
+Cuando el usuario agrega un libro, se genera automáticamente un botón de "Delete" asociado a ese libro. 
+Esto se logra con la función showBooks, que recorre el arreglo books y genera dinámicamente el HTML de 
+cada libro, incluyendo el botón.
+
+2.- Crear la función deleteBook:
+La función recibe el índice del libro como parámetro (pasado dinámicamente desde el botón generado). 
+Utilizando el método splice para eliminar el elemento correspondiente del arreglo books.
+
+3.- Actualizar la lista después de eliminar:
+Después de modificar el arreglo con splice, se llama nuevamente a la función showBooks para refrescar 
+la lista mostrada en pantalla y reflejar los cambios.
+
+4.- Uso de splice:
+El método splice(index, 1) elimina un único elemento del arreglo, empezando desde la posición index.
+
+5.- Función clearInputs:
+Una vez que se agregado un libro, se limpia el formulario llamando a esta función, que establece los
+valores de los campos de entrada en cadenas vacías.
+
+En conclusion, este sistema permite gestionar dinámicamente una lista de libros, agregando y 
+eliminando elementos sin necesidad de recargar la página. Cada interacción actualiza el DOM 
+en tiempo real.
+ */
